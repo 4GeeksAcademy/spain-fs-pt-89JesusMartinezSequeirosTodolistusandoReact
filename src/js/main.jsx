@@ -1,18 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react"; //biblioteca principal de react
+import ReactDOM from "react-dom/client"; //renderiza aplicacion en navegador
+import "../styles/index.css"; // Importa los estilos
+import App from "./components/App"; // Importa el componente principal
 
-//Bootstrap
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap"
-
-// index.css'
-import '../styles/index.css'
-
-// components
-import Home from './components/Home';
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Home/>
-  </React.StrictMode>,
-)
+//renderizamos la aplicacion
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);
